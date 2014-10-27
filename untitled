@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>jsCalc main</title>
+</head>
+
+<body>
+
+<div class="calculator container">
+
+	<div class="table"></div>
+
+</div>
+
+</body>
+
+</html>
