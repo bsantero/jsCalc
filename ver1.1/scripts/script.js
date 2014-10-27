@@ -7,7 +7,7 @@ window.onload = function () {
 	var values = [];
 	var operands = [];
 
-	displayValOps();
+	//displayValOps();
 
 	document.getElementById("calcClear").addEventListener("click", clearDisplay);
 	document.getElementById("calcReturn").addEventListener("click", returnOperation);
@@ -21,17 +21,17 @@ window.onload = function () {
 	for (var i = 0;i<numbers.length;i++){
 		numbers[i].addEventListener("click", setOperand);
 	}
-
+	/*
 	function displayValOps() {
 		console.log("Values: "+values);
 		console.log("Operands: "+operands);
 	}
-
+	*/
 	function clearDisplay() {
 		document.getElementById("calcDisplay").innerHTML = "";
 		equation = "";
 
-		displayValOps();
+		//displayValOps();
 	}
 
 	function displayNumber() {
@@ -50,11 +50,11 @@ window.onload = function () {
 			values[operands.length]=equation;
 		}
 
-		console.log(buttonPress + " is a " + typeof buttonPress);
+		//console.log(buttonPress + " is a " + typeof buttonPress);
 
 		document.getElementById("calcDisplay").innerHTML = equation;
 
-		displayValOps();
+		//displayValOps();
 	}
 
 	function setOperand() {
@@ -67,7 +67,7 @@ window.onload = function () {
 
 		equation = "";
 
-		displayValOps();
+		//displayValOps();
 	}
 
 	function returnOperation() { //  -456+123
